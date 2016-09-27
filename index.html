@@ -1,1 +1,93 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countdown</title>
+    <script src="jquery.min.js"></script>
+    <!--<script type="text/javascript" src="clock/jquery.flipcountdown.js"></script>-->
+    <!--<link rel="stylesheet" type="text/css" href="clock/jquery.flipcountdown.css"/>-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!--<script>-->
+        <!--jQuery(function ($) {-->
+            <!--var date = Math.round((new Date('10/08/2016 00:00:01')).getTime() / 1000);-->
+            <!--$('#clock').flipcountdown({-->
+                <!--size: 'lg',-->
+                <!--beforeDateTime: '10/08/2016 00:00:01',-->
+                <!--tick: function () {-->
+                    <!--var nol = function (h) {-->
+                        <!--return h > 9 ? h : '0' + h;-->
+                    <!--};-->
+                    <!--var range = date - Math.round((new Date()).getTime() / 1000),-->
+                            <!--secday = 86400, sechour = 3600,-->
+                            <!--days = parseInt(range / secday),-->
+                            <!--hours = parseInt((range % secday) / sechour),-->
+                            <!--min = parseInt(((range % secday) % sechour) / 60),-->
+                            <!--sec = ((range % secday) % sechour) % 60;-->
+                    <!--return nol(days) + ' ' + nol(hours) + ' ' + nol(min) + ' ' + nol(sec);-->
+                <!--}-->
+            <!--});-->
+        <!--});-->
+    <!--</script>-->
+
+    <script src="bg/jquery.easybg.js"></script>
+    <script>
+        $(window).load(function(){
+            $('#container').easybg({
+                images: [ // an array of background dimages
+                    'images/1.jpg',
+                    'images/2.jpg',
+                    'images/3.jpg',
+                    'images/4.jpg',
+                    'images/5.jpg'
+                ],
+//                interval: 3000,
+                speed : 1000, // 1 minute
+////                ignoreError : false,
+//                changeMode : 'random', // normal or random
+//                initIndex : 0,
+//                cloneClassId : null,
+//                cloneClassName : 'easybgClone',
+//                debug : false
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<div id="container" class="demo">
+
+</div>
+<!--<div class="middlediv">-->
+    <!--<table style="border:0;">-->
+        <!--<tr>-->
+            <!--<td colspan="4">-->
+                <!--<div class="text large">Hey, Надя! It's just</div>-->
+            <!--</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td style="width:110px;text-align:center;" class="text">Days</td>-->
+            <!--<td style="width:120px;text-align:center;" class="text">Hours</td>-->
+            <!--<td style="width:110px;text-align:center;" class="text">Minutes</td>-->
+            <!--<td style="width:120px;text-align:center;" class="text">Seconds</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td colspan="4">-->
+                <!--<div id="clock"></div>-->
+            <!--</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td colspan="4">-->
+                <!--<div class="text large">left until we meet in Moscow!</div>-->
+            <!--</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td colspan="4">-->
+                <!--<div class="text large">See you soon :-)</div>-->
+            <!--</td>-->
+        <!--</tr>-->
+    <!--</table>-->
+<!--</div>-->
+
+</body>
+</html>
