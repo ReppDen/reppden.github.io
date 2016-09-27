@@ -31,23 +31,19 @@
 
     <script src="bg/jquery.easybg.js"></script>
     <script>
-        $(window).load(function(){
+        $(window).load(function()
+        {
             $('#container').easybg({
-                images: [ // an array of background dimages
+                images: [
                     'images/1.jpg',
                     'images/2.jpg',
                     'images/3.jpg',
-                    'images/4.jpg',
-                    'images/5.jpg'
+                    'images/4.jpg'
                 ],
-//                interval: 3000,
-                speed : 1000, // 1 minute
-////                ignoreError : false,
-//                changeMode : 'random', // normal or random
-//                initIndex : 0,
-//                cloneClassId : null,
-//                cloneClassName : 'easybgClone',
-//                debug : false
+                interval: 5000,
+                initIndex : 0,
+                ignoreError : true,
+                debug : false
             });
         });
     </script>
@@ -55,8 +51,11 @@
 </head>
 <body>
 
-<div id="container" class="demo">
+<!--<div id="container" class="demo">-->
 
+<!--</div>-->
+<div id="container" class="easybg-css">
+    <div>111</div>
 </div>
 <!--<div class="middlediv">-->
     <!--<table style="border:0;">-->
